@@ -1,27 +1,28 @@
-# MCLauncher
+# Minecraft 基岩版版本管理器
 
-This tool allows you to install several versions of Minecraft: Windows 10 Edition (Bedrock) side-by-side.
-This is useful if you want to test beta versions, releases or anything else side-by-side without needing to uninstall and reinstall the game.
+源项目：https://github.com/MCMrARM/mc-w10-version-launcher
 
-## Disclaimer
-This tool will **not** help you to pirate the game; it requires that you have a Microsoft account which can be used to download Minecraft from the Store.
+## 要求
 
-## Prerequisites
-- A Microsoft account connected to Microsoft Store which **owns Minecraft for Windows 10**
-- **Administrator permissions** on your user account (or access to an account that has)
-- **Developer mode** enabled for app installation in Windows 10 Settings
-- If you want to be able to use beta versions, you'll additionally need to **subscribe to the Minecraft Beta program using Xbox Insider Hub**.
-- [Microsoft Visual C++ Redistributable](https://aka.ms/vs/16/release/vc_redist.x64.exe) installed.
+1. Windows 10及更高版本
+2. 您需要先获取 Minecraft 试玩版。
+3. .NET Framework 4.8
 
-## Setup
-- Download the latest release from the [Releases](https://github.com/MCMrARM/mc-w10-version-launcher/releases) section. Unzip it somewhere.
-- Run `MCLauncher.exe` to start the launcher.
+## 亮点
 
-## Compiling the launcher yourself
-You'll need Visual Studio with Windows 10 SDK version 10.0.17763 and .NET Framework 4.6.1 SDK installed. You can find these in the Visual Studio Installer if you don't have them out of the box.
-The project should build out of the box with VS as long as you haven't done anything bizarre.
+1. 完全汉化
+2. 使用了第三方主题替代原版 WPF 主题
+3. 使用 FastGit 替换了原来的 Github Raw（国内可以正常使用）
+4. 集成了解除使用限制工具
 
-## Frequently Asked Questions
-**Does this allow running multiple instances of Minecraft: Bedrock at the same time?**
+## 编译
 
-At the time of writing, no. It allows you to _install_ multiple versions, but only one version can run at a time.
+请使用 Visual Studio 2022，并包含最新的 Windows SDK！
+
+## TODO
+
+- [x] 汉化
+- [x] 美化UI
+- [x] 使用更快的 GitHub Raw
+- [ ] 整合解除限制程序
+- [ ] 使用 TaskDialog 全局替换 MessageBox
