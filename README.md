@@ -1,3 +1,6 @@
+> [!WARNING]
+> 此项目不再更新且归档，因部分原因软件已无法正常使用，若有需求请使用上游版本
+
 # Minecraft 基岩版版本管理器
 
 源项目：https://github.com/MCMrARM/mc-w10-version-launcher
